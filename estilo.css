@@ -162,8 +162,8 @@ header button:hover {
 }
 
 h2 {
-    margin: 35px 40px 30px 40px;
-    padding: 0px 0px 00px 0px;
+    margin: 40px 40px 30px 45px;
+    padding: 0px 0px 0px 0px;
     font-family: 'Arial';
     font-size: 35px;
     color: black;
@@ -173,13 +173,14 @@ h2 {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin: 40px 40px 0px 40px;
+    margin: 40px 30px 0px 30px;
 }
 
 .produtos .produto {
     position: relative;
     width: 400px;
     height: 500px;
+    margin: 10px 15px;
 }
 
 .produtos .produto img {
@@ -274,23 +275,12 @@ h2 {
     background-color: #70b835;
 }
 
-.marcas{
-    display: flex;
-    justify-content: space-between;
-    margin: 140px 40px 15px 40px;
-}
-
-.marca {
-    cursor: pointer;
-    width: 15%;
-}
-
-
 /* SlideShow */
 
 
-.mySlides {display: none}
-img {vertical-align: middle;}
+.mySlides {
+    display: none
+}
 
 /* Slideshow container */
 .slideshow-container {
