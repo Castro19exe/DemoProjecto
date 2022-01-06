@@ -7,12 +7,6 @@ header {
     gap: 10px;
     padding: 20px 30px;
     background-color: rgb(15, 15, 15);
-    /* background-image: url("img/logo.png"); */
-    background-repeat: no-repeat;
-    background-size: 54px;
-    background-position-y: 17px;
-    background-position-x: 10px;
-    
 }
 
 header .logo {
@@ -26,6 +20,7 @@ ul {
 }
 
 li {
+    cursor: pointer;
     display: inline;
     padding: 0px 0px;
 }
@@ -41,6 +36,12 @@ header .categoria {
 
 header .categoria:hover {
     border-bottom: 2px solid rgb(226, 55, 55);
+}
+
+header .icon {
+    display: none;
+    font-size: 27px;
+    color: rgb(226, 55, 55);
 }
 
 header .login {
@@ -156,38 +157,75 @@ header button:hover {
     justify-content: center;
 }
 
+.search-container-responsive {
+    display: none;
+    width: 100%;
+    margin-bottom: 37px;
+}
+
+.search-container-responsive input {
+    float: left;
+    outline: none;
+    width: 93%;
+    padding: 10px 1%;
+    font-family: 'Verdana';
+    border: 0px solid rgb(226, 55, 55);
+    border-bottom: 1px solid rgb(226, 55, 55);
+}
+
+.search-container-responsive button {
+    cursor: pointer;
+    float: left;
+    min-width: 5%;
+    max-width: 5%;
+    height: 37px;
+    font-size: 20px;
+    color: rgb(226, 55, 55);
+    background: white;
+    border: 0px solid rgb(226, 55, 55);
+    border-bottom: 1px solid rgb(226, 55, 55);
+    transition: 0.2s;
+}
+
+.search-container-responsive button:hover {
+    cursor: pointer;
+    color: rgb(226, 55, 55);
+    background: #ddd;
+    border: 0px solid rgb(226, 55, 55);
+    border-bottom: 1px solid rgb(226, 55, 55);
+}
+
 .img_announce {
     max-width: 100%;
     height: auto;
 }
 
 h2 {
-    margin: 40px 40px 30px 45px;
+    margin: 55px 40px 0px 55px;
     padding: 0px 0px 0px 0px;
     font-family: 'Arial';
-    font-size: 35px;
+    font-size: 2vw;
     color: black;
 }
 
 .produtos {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    margin: 40px 30px 0px 30px;
+    justify-content: center;
+    margin: 20px 30px 0px 30px;
 }
 
 .produtos .produto {
     position: relative;
-    width: 400px;
-    height: 500px;
-    margin: 10px 15px;
+    width: 23%;
+    height: auto;
+    margin: 35px 15px;
 }
 
 .produtos .produto img {
     cursor: pointer;
     position: absolute;
-    min-width: 400px;
-    max-width: 400px;
+    width: 100%;
 }
 
 .produtos .img1:hover {
@@ -198,6 +236,7 @@ h2 {
 .produtos .img2 {
     opacity: 0;
     transition: 0.2s;
+    width: 100%;
 }
 
 .produtos .img2:hover {
@@ -206,19 +245,18 @@ h2 {
 }
 
 .produtos .nome {
-    margin-top: 410px;
-    margin-bottom: 0%;
-    margin-left: 2px;
-    font-family: 'Arial';
+    margin-top: 102%;
+    margin-bottom: 1%;
+    font-family: 'Verdana';
     font-size: 14px;
 }
 
 .produtos .preco {
-    margin-top: 7px;
-    margin-left: 2px;
-    font-family: 'Arial';
-    font-size: 17px;
     position: absolute;
+    margin-top: 0%;
+    font-family: 'Verdana';
+    font-size: 17px;
+    font-weight: bold;
 }
 
 .desconto {
@@ -231,22 +269,18 @@ h2 {
 }
 
 .teste2 {
-    margin-top: 28px;
-    margin-left: 2px;
     height: 40px;
-    font-family: 'Century Gothic';
-    font-size: 20px;
+    font-family: 'Verdana';
+    font-size: 18px;
     font-weight: bold;
     color: #e71836;
 }
 
 .teste3 {
-    margin-top: 28px;
-    margin-left: 2px;
     padding: 0px 10px;
-    height: 25px;
-    font-family: century gothic;
-    font-size: 20px;
+    height: 22.5px;
+    font-family: 'Century Gothic';
+    font-size: 18px;
     font-weight: bold;
     color: white;
     background-color: #e71836;
@@ -276,7 +310,6 @@ h2 {
 }
 
 /* SlideShow */
-
 
 .mySlides {
     display: none
@@ -308,13 +341,13 @@ h2 {
 
 .prev {
     left: 10px;
-    border-radius: 100%;
+    border-radius: 0%;
 }
 
 /* Position the "next button" to the right */
 .next {
     right: 10px;
-    border-radius: 100%;
+    border-radius: 0%;
 }
 
 /* On hover, add a black background color with a little bit see-through */
@@ -347,9 +380,9 @@ h2 {
   cursor: pointer;
   height: 15px;
   width: 15px;
-  margin: 0 2px;
+  margin: 0 3px;
   background-color: #bbb;
-  border-radius: 50%;
+  border-radius: 0%;
   display: inline-block;
   transition: background-color 0.6s ease;
 }
@@ -360,23 +393,167 @@ h2 {
 
 /* Fading animation */
 .fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
 }
 
 @-webkit-keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
+    from {
+        opacity: .4
+    }
+    
+    to {
+        opacity: 1
+    }
 }
 
 @keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
 }
 
-/* On smaller screens, decrease text size */
+
+
+/* RESPONSIVE */
+
+@media screen and (max-width: 1470px) {
+    header .search-container{
+        display: none;
+    }
+
+    h2 {
+        font-size: 200%;
+    }
+
+    .search-container-responsive {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 1115px) {
+    header {
+        display: inherit;
+        padding: 20px 0px;
+    }
+
+    ul {
+        list-style-type: none;
+        margin: auto;
+    }
+
+    header .logo {
+        display: block;
+        width: 219px;
+        margin: 0px 0px 0px 30px;
+        padding: 0px;
+    }
+
+    header .icon {
+        display: block;
+        position: absolute;
+        top: 30px;
+        left: 90%;
+    }
+
+    header .categoria, .special, .login, .search-container{
+        display: none;
+    }
+
+    h2 {
+        font-size: 200%;
+    }
+
+    .search-container-responsive {
+        display: block;
+    }
+
+    .menu.responsive {
+        position: relative;
+    }
+
+    .menu.responsive .logo {
+        padding: 0px;
+    }
+
+    .menu.responsive .icon {
+        display: block;
+        position: absolute;
+        top: 30px;
+        left: 90%;
+    }
+
+    .menu.responsive a {
+        display: block;
+        padding: 20px 20px;
+        font-family: 'Arial';
+        font-size: 20px;
+        font-weight: bold;
+        text-align: center;
+        text-decoration: none;
+        
+    }
+
+    .menu.responsive a:hover {
+        border: none;
+    }
+
+    .teste:hover .dropdown-content {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 999px) {
+    h2 {
+        margin: 60px 40px 0px 40px;
+        text-align: center;
+        font-family: 'Arial';
+        font-size: 5vw;
+        color: black;
+    }
+
+    .produtos .produto {
+        position: relative;
+        width: 80%;
+        height: auto;
+        margin: 35px 15px;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    .search-container-responsive input {
+        float: left;
+        outline: none;
+        width: 73%;
+        height: 18px;
+        font-family: 'Verdana';
+        border: 0px solid rgb(226, 55, 55);
+        border-bottom: 1px solid rgb(226, 55, 55);
+    }
+
+    .search-container-responsive button {
+        cursor: pointer;
+        float: left;
+        min-width: 25%;
+        max-width: 25%;
+        height: 39px;
+        font-size: 20px;
+        color: rgb(226, 55, 55);
+        background: white;
+        border: 0px solid rgb(226, 55, 55);
+        border-bottom: 1px solid rgb(226, 55, 55);
+        transition: 0.2s;
+    }
+}
+
 @media only screen and (max-width: 300px) {
-  .prev, .next,.text {font-size: 11px}
+    .prev, .next, .text {
+        font-size: 11px
+    }
 }
