@@ -172,6 +172,7 @@ header button:hover {
     font-family: 'Verdana';
     border: 0px solid rgb(226, 55, 55);
     border-bottom: 1px solid rgb(226, 55, 55);
+    border-radius: 0px;
 }
 
 .search-container-responsive button {
@@ -524,10 +525,10 @@ h2 {
     }
 
     h2 {
-        margin: 60px 40px 0px 40px;
+        margin: 40px 40px 0px 40px;
         text-align: center;
         font-family: 'Arial';
-        font-size: 5vw;
+        font-size: 7vw;
         color: black;
     }
 
@@ -535,7 +536,7 @@ h2 {
         position: relative;
         width: 80%;
         height: auto;
-        margin: 35px 15px;
+        margin: 20px 15px;
     }
 
     .search-container-responsive input {
