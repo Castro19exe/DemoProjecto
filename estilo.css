@@ -17,6 +17,7 @@ header .logo {
 ul {
     list-style-type: none;
     margin: auto;
+    padding: 0px;
 }
 
 li {
@@ -454,11 +455,6 @@ h2 {
     header {
         display: inherit;
         padding: 20px 0px;
-    }
-
-    ul {
-        list-style-type: none;
-        margin: auto;
     }
 
     header .logo {
