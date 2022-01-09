@@ -170,22 +170,20 @@ header button:hover {
     width: 93%;
     padding: 10px 1%;
     font-family: 'Verdana';
-    border: 0px solid rgb(226, 55, 55);
-    border-bottom: 1px solid rgb(226, 55, 55);
+    border: none;
     border-radius: 0px;
 }
 
 .search-container-responsive button {
     cursor: pointer;
-    float: left;
+    float: right;
     min-width: 5%;
     max-width: 5%;
     height: 37px;
     font-size: 20px;
     color: white;
     background-color: rgb(226, 55, 55);
-    border: 0px solid rgb(226, 55, 55);
-    border-bottom: 1px solid rgb(226, 55, 55);
+    border: none;
     transition: 0.2s;
 }
 
@@ -193,8 +191,7 @@ header button:hover {
     cursor: pointer;
     color: #ddd;
     background-color: rgb(185, 46, 46);
-    border: 0px solid rgb(226, 55, 55);
-    border-bottom: 1px solid rgb(226, 55, 55);
+    border: none;
 }
 
 .img_announce {
@@ -507,7 +504,6 @@ h2 {
         font-weight: bold;
         text-align: center;
         text-decoration: none;
-        
     }
 
     .menu.responsive a:hover {
@@ -532,11 +528,15 @@ h2 {
         color: black;
     }
 
+    .produtos {
+        margin: 0px 30px 0px 30px;
+    }
+
     .produtos .produto {
         position: relative;
         width: 80%;
         height: auto;
-        margin: 20px 15px;
+        margin: 30px 15px;
     }
 
     .search-container-responsive input {
@@ -544,26 +544,25 @@ h2 {
         outline: none;
         width: 78%;
         height: 18px;
+        padding: 10px 0%;
         font-family: 'Verdana';
-        border: 0px solid rgb(226, 55, 55);
-        border-bottom: 1px solid rgb(226, 55, 55);
+        border: none;
     }
 
     .search-container-responsive button {
         cursor: pointer;
-        float: left;
+        float: right;
         min-width: 20%;
         max-width: 20%;
         height: 39px;
         font-size: 20px;
-        border: 0px solid rgb(226, 55, 55);
-        border-bottom: 1px solid rgb(226, 55, 55);
+        border: none;
         transition: 0.2s;
     }
 }
 
 @media only screen and (max-width: 300px) {
     .prev, .next, .text {
-        font-size: 11px
+        font-size: 11px;
     }
 }
