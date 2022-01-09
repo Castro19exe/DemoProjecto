@@ -86,7 +86,6 @@ section {
     height: 50px;
     margin-top: 40px;
     margin-bottom: 40px;
-    font-family: 'Ink Free';
     font-size: 150%;
     color: #E6E6E6;
     background-color: #AE4242;
@@ -94,7 +93,7 @@ section {
     border-radius: 50px;
     border-color: #AE4242;
     transition: width 0.7s, background-color 0.3s, border-radius 1s;
-    }
+}
 
 .submit:hover {
     outline: 0;

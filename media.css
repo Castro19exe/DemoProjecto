@@ -130,14 +130,14 @@
         outline: none;
         width: 78%;
         height: 18px;
-        padding: 10px 0.5%;
+        padding: 10px 1%;
         font-family: 'Verdana';
         border: none;
     }
 
     .search-container-responsive button {
         cursor: pointer;
-        float: right;
+        float: left;
         min-width: 20%;
         max-width: 20%;
         height: 39px;
@@ -163,6 +163,79 @@
 
     .prev:hover, .next:hover {
         background-color: rgb(226, 55, 55);
+    }
+
+    #form_control_L {
+        display: block;
+        margin: auto;
+        width: 380px;
+        min-height: 55%;
+        text-align: center;
+        background-color: white;
+        border: none;
+        -ms-transform: translate(0%, 19%);
+        transform: translate(0%, 19%);
+    }
+
+    .tit {
+        display: block;
+        position: relative;
+        margin: auto;
+        margin-bottom: 20px;
+        font-size: 300%;
+        font-family: 'Bradley Hand ITC';
+        font-weight: bold;
+        color: black;
+    }
+    
+    .dados {
+        outline: none;
+        width: 90%;
+        height: 55px;
+        margin-top: 20px;
+        padding: 8px 12px;
+        font-size: 120%;
+        font-family: Century Gothic;
+        font-weight: none;
+        color: black;
+        background-color: #E5E5E5;
+        border: none;
+        border-bottom: 2px solid black;
+        border-top-left-radius: 0px;
+        border-top-right-radius: 0px;
+        transition: border 0.2s;
+    }
+    
+    .dados:hover {
+        color: rgb(226, 55, 55);
+        border-bottom: 2px solid rgb(226, 55, 55);
+    }
+    
+    .dados:focus {
+        color: rgb(226, 55, 55);
+        border-bottom: 2px solid rgb(226, 55, 55);
+    }
+
+    .create {
+        color: black;
+        padding: 10px 0px;
+        font-size: 90%;
+        font-family: Lucida Calligraphy;
+    }
+
+    .submit {
+        width: 90px;
+        height: 90px;
+        margin-top: 40px;
+        margin-bottom: 40px;
+        font-family: 'Ink Free';
+        font-size: 150%;
+        color: #E6E6E6;
+        background-color: rgb(226, 55, 55);
+        border: 1px solid;
+        border-radius: 15px;
+        border-color: rgb(226, 55, 55);
+        transition: width 0.7s, background-color 0.3s, border-radius 1s;
     }
 }
 
