@@ -161,7 +161,7 @@ header button:hover {
 .search-container-responsive {
     display: none;
     width: 100%;
-    margin-bottom: 37px;
+    margin-bottom: 39px;
 }
 
 .search-container-responsive input {
@@ -272,7 +272,16 @@ h2 {
     font-weight: bold;
 }
 
-.desconto {
+.produtos .precoAntigo {
+    position: absolute;
+    margin-top: 0%;
+    font-family: 'Verdana';
+    font-size: 17px;
+    font-weight: normal;
+    text-decoration: line-through; 
+}
+
+.produtos .desconto {
     height: 45px;
     position: absolute;
     display: flex;
@@ -292,7 +301,7 @@ h2 {
 .teste3 {
     padding: 0px 10px;
     height: 22.5px;
-    font-family: 'Century Gothic';
+    font-family: 'Verdana';
     font-size: 18px;
     font-weight: bold;
     color: white;
@@ -429,140 +438,5 @@ h2 {
 
     to {
         opacity: 1
-    }
-}
-
-
-/* RESPONSIVE */
-
-@media screen and (max-width: 1470px) {
-    header .search-container{
-        display: none;
-    }
-
-    h2 {
-        font-size: 200%;
-    }
-
-    .search-container-responsive {
-        display: block;
-    }
-}
-
-@media screen and (max-width: 1115px) {
-    header {
-        display: inherit;
-        padding: 20px 0px;
-    }
-
-    header .logo {
-        display: block;
-        width: 219px;
-        margin: 0px 0px 0px 30px;
-        padding: 0px;
-    }
-
-    header .icon {
-        display: block;
-        position: absolute;
-        top: 30px;
-        left: 90%;
-    }
-
-    header .categoria, .special, .login, .search-container{
-        display: none;
-    }
-
-    h2 {
-        font-size: 200%;
-    }
-
-    .search-container-responsive {
-        display: block;
-    }
-
-    .menu.responsive {
-        position: relative;
-    }
-
-    .menu.responsive .logo {
-        padding: 0px;
-    }
-
-    .menu.responsive .icon {
-        display: block;
-        position: absolute;
-        top: 30px;
-        left: 90%;
-    }
-
-    .menu.responsive a {
-        display: block;
-        padding: 20px 20px;
-        font-family: 'Arial';
-        font-size: 20px;
-        font-weight: bold;
-        text-align: center;
-        text-decoration: none;
-    }
-
-    .menu.responsive a:hover {
-        border: none;
-    }
-
-    .teste:hover .dropdown-content {
-        display: none;
-    }
-}
-
-@media screen and (max-width: 999px) {
-    .announceVote {
-        display: none;
-    }
-
-    h2 {
-        margin: 40px 40px 0px 40px;
-        text-align: center;
-        font-family: 'Arial';
-        font-size: 7vw;
-        color: black;
-    }
-
-    .produtos {
-        margin: 0px 30px 0px 30px;
-    }
-
-    .produtos .produto {
-        position: relative;
-        width: 80%;
-        height: auto;
-        margin: 30px 15px;
-    }
-
-    .search-container-responsive input {
-        float: left;
-        outline: none;
-        width: 78%;
-        height: 18px;
-        padding: 10px 0%;
-        font-family: 'Verdana';
-        border: none;
-    }
-
-    .search-container-responsive button {
-        cursor: pointer;
-        float: right;
-        min-width: 20%;
-        max-width: 20%;
-        height: 39px;
-        font-size: 20px;
-        border: none;
-        transition: 0.2s;
-    }
-}
-
-@media only screen and (max-width: 300px) {
-    .prev, .next, .text {
-        font-size: 11px;
     }
 }

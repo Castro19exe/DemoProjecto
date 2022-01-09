@@ -1,0 +1,173 @@
+@media screen and (max-width: 1470px) {
+    header .search-container{
+        display: none;
+    }
+
+    h2 {
+        font-size: 200%;
+    }
+
+    .search-container-responsive {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 1115px) {
+    header {
+        display: inherit;
+        padding: 20px 0px;
+    }
+
+    header .logo {
+        display: block;
+        width: 219px;
+        margin: 0px 0px 0px 30px;
+        padding: 0px;
+    }
+
+    header .icon {
+        display: block;
+        position: absolute;
+        top: 30px;
+        left: 90%;
+    }
+
+    header .categoria, .special, .login, .search-container{
+        display: none;
+    }
+
+    h2 {
+        font-size: 200%;
+    }
+
+    .search-container-responsive {
+        display: block;
+    }
+
+    .menu.responsive {
+        position: relative;
+    }
+
+    .menu.responsive .logo {
+        padding: 0px;
+    }
+
+    .menu.responsive .icon {
+        display: block;
+        position: absolute;
+        top: 30px;
+        left: 90%;
+    }
+
+    .menu.responsive a {
+        display: block;
+        padding: 20px 0px;
+        font-family: 'Arial';
+        font-size: 20px;
+        font-weight: bold;
+        text-align: center;
+        text-decoration: none;
+    }
+
+    .menu.responsive a:hover {
+        border: none;
+    }
+
+    .teste:hover .dropdown-content {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 999px) {
+    .announceVote {
+        display: none;
+    }
+
+    h2 {
+        margin: 80px 00px 0px 0px;
+        text-align: center;
+        font-family: 'Arial';
+        font-size: 7vw;
+        color: black;
+    }
+
+    .produtos {
+        margin: 0px 30px 0px 30px;
+    }
+
+    .produtos .produto {
+        position: relative;
+        width: 80%;
+        height: auto;
+        margin: 30px 15px;
+    }
+    
+    .produtos .produto img {
+        cursor: pointer;
+        position: absolute;
+        width: 100%;
+    }
+    
+    .produtos .img1:hover {
+        cursor: pointer;
+        opacity: 1;
+    }
+    
+    .produtos .img2 {
+        display: none;
+    }
+    
+    .produtos .img2:hover {
+        display: none;
+    }
+
+    .search-container-responsive {
+        margin-bottom: 37px;
+    }
+
+    .search-container-responsive input {
+        float: left;
+        outline: none;
+        width: 78%;
+        height: 18px;
+        padding: 10px 0.5%;
+        font-family: 'Verdana';
+        border: none;
+    }
+
+    .search-container-responsive button {
+        cursor: pointer;
+        float: right;
+        min-width: 20%;
+        max-width: 20%;
+        height: 39px;
+        font-size: 20px;
+        border: none;
+        transition: 0.2s;
+    }
+
+    .prev {
+        top: 172.5px;
+        left: 0px;
+        background-color: rgb(226, 55, 55);
+        border-radius: 0%;
+    }
+    
+    /* Position the "next button" to the right */
+    .next {
+        top: 172.5px;
+        right: 0px;
+        background-color: rgb(226, 55, 55);
+        border-radius: 0%;
+    }
+
+    .prev:hover, .next:hover {
+        background-color: rgb(226, 55, 55);
+    }
+}
+
+@media only screen and (max-width: 300px) {
+    .prev, .next, .text {
+        font-size: 11px;
+    }
+}
