@@ -1,6 +1,5 @@
-body {
-    width: auto;
-    height: 100vh;
+html, body {
+    margin: 0;
     background-image: url("img/annouce2.png");
     background-attachment: fixed;
     background-size: cover;
@@ -8,37 +7,30 @@ body {
     background-position: center;
 }
 
-section {
-    width: auto;
-    height: 100vh;
-}
-
-#form_control_L {
-    display: block;
-    margin: auto;
-    width: 650px;
-    min-height: 55%;
-    text-align: center;
+.login-register {
+    width: 45%;
+    height: 96vh;
+    margin: 2vh auto;
+    padding: 40px 0px;
     background-color: white;
-    border: none;
-    -ms-transform: translate(0%, 19%);
-    transform: translate(0%, 19%);
+    box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.5);
 }
 
 .tit {
     display: block;
-    position: relative;
     margin: auto;
-    margin-bottom: 30px;
-    font-size: 420%;
+    font-size: 60px;
     font-family: 'Bradley Hand ITC';
     font-weight: bold;
+    text-align: center;
     color: black;
 }
 
 .dados {
+    display: block;
+    margin: auto;
     outline: none;
-    width: 65%;
+    width: 425px;
     height: 55px;
     margin-top: 20px;
     padding: 8px 12px;
@@ -51,6 +43,7 @@ section {
     border-bottom: 2px solid black;
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
+    box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.35);
     transition: border 0.2s;
 }
 
@@ -65,10 +58,11 @@ section {
 }
 
 .create {
-    color: black;
-    padding: 4px;
+    padding: 20px 0px;
     font-size: 115%;
-    font-family: Lucida Calligraphy;
+    font-family: 'Lucida Calligraphy';
+    text-align: center;
+    color: black;
 }
 
 .here {
@@ -82,25 +76,27 @@ section {
 }
 
 .submit {
-    width: 50px;
-    height: 50px;
+    outline: 0;
+    display: block;
+    margin: auto;
+    width: 100px;
+    height: 100px;
     margin-top: 40px;
     margin-bottom: 40px;
-    font-size: 150%;
+    font-size: 40px;
     color: #E6E6E6;
     background-color: #AE4242;
-    border: 1px solid;
-    border-radius: 50px;
+    border: 0px solid;
+    border-radius: 30px;
     border-color: #AE4242;
-    transition: width 0.7s, background-color 0.3s, border-radius 1s;
+    transition: width 0.7s, background-color 0.3s, border-radius 0.4s;
 }
 
 .submit:hover {
     outline: 0;
-    width: 65%;
-    border-radius: 0px;
     color: white;
     background-color: rgb(226, 55, 55);
+    border-radius: 0px;
     border-color: rgb(226, 55, 55);
 }
 
