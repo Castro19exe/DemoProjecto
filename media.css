@@ -1,14 +1,20 @@
+@media screen and (max-width: 1550px) {
+    .produtos .produto {
+        width: 25%;
+    }
+}
+
 @media screen and (max-width: 1470px) {
     header .search-container{
         display: none;
     }
 
-    h2 {
-        font-size: 200%;
+    h2 .h2-home{
+        font-size: 7vw;
     }
 
     .search-container-responsive {
-        display: block;
+        display: flex;
     }
 }
 
@@ -21,7 +27,7 @@
     header .logo {
         display: block;
         width: 219px;
-        margin: 0px 0px 0px 30px;
+        margin: 0px 0px 0px 20px;
         padding: 0px;
     }
 
@@ -36,12 +42,8 @@
         display: none;
     }
 
-    h2 {
-        font-size: 200%;
-    }
-
     .search-container-responsive {
-        display: block;
+        display: flex;
     }
 
     .menu.responsive {
@@ -77,11 +79,14 @@
         display: none;
     }
 
-    h2 {
-        margin: 80px 00px 0px 0px;
+    .h2-home {
+        font-size: 6vw;
+    }
+
+    .h2-special, .h2-news, .h2-sales {
         text-align: center;
-        font-family: 'Arial';
-        font-size: 7vw;
+        font-family: 'Verdana';
+        font-size: 4.2vw;
         color: black;
     }
 
@@ -116,16 +121,14 @@
     }
 
     .search-container-responsive {
-        margin-bottom: 39px;
+        margin-bottom: 0px;
     }
 
     .search-container-responsive input {
-        float: left;
         outline: none;
-        width: 78%;
+        float: left;
+        flex: 70%;
         height: 18px;
-        padding-block: 10px;
-        padding-inline: 1% 1px;
         font-family: 'Verdana';
         border: none;
     }
@@ -133,8 +136,7 @@
     .search-container-responsive button {
         cursor: pointer;
         float: left;
-        min-width: 20%;
-        max-width: 20%;
+        flex: 30%;
         height: 39px;
         font-size: 20px;
         border: none;
@@ -144,7 +146,7 @@
     .prev {
         top: 40%;
         left: 0px;
-        background-color: rgb(226, 55, 55);
+        background-color: rgb(226, 55, 55, 0.8);
         border-radius: 0%;
     }
     
@@ -152,12 +154,12 @@
     .next {
         top: 40%;
         right: 0px;
-        background-color: rgb(226, 55, 55);
+        background-color: rgb(226, 55, 55, 0.8);
         border-radius: 0%;
     }
 
     .prev:hover, .next:hover {
-        background-color: rgb(226, 55, 55);
+        background-color: rgb(226, 55, 55, 0.8);
     }
 }
 
@@ -248,13 +250,20 @@
 }
 
 @media screen and (max-width: 700px) {
+    header .icon {
+        display: block;
+        position: absolute;
+        top: 30px;
+        left: 85%;
+    }
+
     .produtos {
         margin: 0px 30px 30px 30px;
     }
 
     .produtos .produto {
         position: relative;
-        width: 40%;
+        width: 45%;
         height: auto;
         margin: 30px 15px;
     }
@@ -279,14 +288,18 @@
     }
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 699px) {
+    .menu.responsive .icon {
+        left: 85%;
+    }
+
     .produtos {
         margin: 0px 30px 30px 30px;
     }
 
     .produtos .produto {
         position: relative;
-        width: 80%;
+        width: 85%;
         height: auto;
         margin: 30px 15px;
     }
@@ -394,18 +407,15 @@
         transition: width 0.7s, background-color 0.3s, border-radius 0.4s;
     }
 
-    /* SlideShow */
-
     .mySlides {
         display: none
     }
 
-    /* Slideshow container */
     .slideshow-container {
         max-width: 95%;
         height: auto;
         position: relative;
-        margin: 50px auto;
+        margin: 10px auto;
         margin-bottom: 13px;
     }
 
@@ -436,12 +446,12 @@
     }
 
     .prev {
-        left: 10px;
+        left: 0px;
         border-radius: 0%;
     }
 
     .next {
-        right: 10px;
+        right: 0px;
         border-radius: 0%;
     }
 
@@ -469,25 +479,5 @@
         -webkit-animation-duration: 1.5s;
         animation-name: fade;
         animation-duration: 1.5s;
-    }
-
-    @-webkit-keyframes fade {
-        from {
-            opacity: .4
-        }
-        
-        to {
-            opacity: 1
-        }
-    }
-
-    @keyframes fade {
-        from {
-            opacity: .4
-        }
-
-        to {
-            opacity: 1
-        }
     }
 }

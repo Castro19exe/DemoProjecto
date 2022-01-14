@@ -161,26 +161,24 @@ header button:hover {
 .search-container-responsive {
     display: none;
     width: 100%;
-    margin-bottom: 39px;
 }
 
 .search-container-responsive input {
-    float: left;
     outline: none;
-    width: 93%;
-    padding: 10px 1%;
+    float: left;
+    flex: 80%;
+    height: 18px;
+    padding-block: 10px;
+    padding-inline: 10px 1px;
     font-family: 'Verdana';
     border: none;
-    border-radius: 0px;
 }
 
 .search-container-responsive button {
     cursor: pointer;
-    float: right;
-    min-width: 5%;
-    max-width: 5%;
+    float: left;
+    flex: 20%;
     height: 39px;
-    padding: 0px;
     font-size: 20px;
     color: white;
     background-color: rgb(226, 55, 55);
@@ -196,17 +194,16 @@ header button:hover {
 }
 
 .img_announce {
-    
     max-width: 100%;
     height: auto;
    
 }
 
-h2 {
-    margin: 55px 0px 0px 0px;
+.h2-home, .h2-special, .h2-news, .h2-sales {
+    margin: 40px 0px 10px 0px;
     padding: 0px 0px 0px 0px;
-    font-family: 'Arial';
-    font-size: 2vw;
+    font-family: 'Verdana';
+    font-size: 2vw;;
     text-align: center;
     color: black;
 }
@@ -220,7 +217,7 @@ h2 {
 
 .produtos .produto {
     position: relative;
-    width: 25%;
+    width: 20%;
     height: auto;
     margin: 35px 15px;
 }
@@ -314,7 +311,7 @@ h2 {
     margin: 0;
     padding: 0px 10px;
     height: 25px;
-    font-family: century gothic;
+    font-family: 'Verdana';
     font-size: 20px;
     font-weight: bold;
     color: white;
