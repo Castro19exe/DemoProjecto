@@ -14,14 +14,14 @@
     }
 
     .search-container-responsive {
-        display: flex;
+        display: none;
     }
 }
 
 @media screen and (max-width: 1115px) {
-    header {
+    .menu {
         display: inherit;
-        padding: 20px 0px;
+        padding: 20px 0px 20px 0px;
     }
 
     header .logo {
@@ -38,16 +38,19 @@
         left: 90%;
     }
 
-    header .categoria, .special, .login, .search-container{
+    header .categoria, .special, .login, .search-container-responsive{
         display: none;
     }
 
-    .search-container-responsive {
+    .menu.responsive .search-container-responsive {
         display: flex;
+        margin: auto 0px;
+        padding: 20px 0px 0px 0px;
     }
 
     .menu.responsive {
         position: relative;
+        padding: 20px 0px 10px 0px;
     }
 
     .menu.responsive .logo {
@@ -127,8 +130,8 @@
     .search-container-responsive input {
         outline: none;
         float: left;
-        flex: 70%;
-        height: 18px;
+        flex: 80%;
+        height: 19px;
         font-family: 'Verdana';
         border: none;
     }
@@ -136,7 +139,7 @@
     .search-container-responsive button {
         cursor: pointer;
         float: left;
-        flex: 30%;
+        flex: 20%;
         height: 39px;
         font-size: 20px;
         border: none;
@@ -429,7 +432,6 @@
         border-radius: 10px;
     }
 
-    /* Next & previous buttons */
     .prev, .next {
         cursor: pointer;
         position: absolute;
@@ -440,19 +442,17 @@
         font-size: 18px;
         color: white;
         background-color: rgb(226, 55, 55, 0.8);
-        border-radius: 0 3px 3px 0;
+        border-radius: 0px;
         user-select: none;
         transition: 0.6s ease;
     }
 
     .prev {
         left: 0px;
-        border-radius: 0%;
     }
 
     .next {
         right: 0px;
-        border-radius: 0%;
     }
 
     .prev:hover, .next:hover {
