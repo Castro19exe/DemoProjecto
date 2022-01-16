@@ -212,7 +212,7 @@ header button:hover {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin: 20px 30px 30px 30px;
+    margin: 20px 30px 60px 30px;
 }
 
 .produtos .produto {
