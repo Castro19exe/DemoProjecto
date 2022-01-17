@@ -21,7 +21,7 @@ html, body {
     margin: auto;
     margin-bottom: 50px;
     font-size: 60px;
-    font-family: 'Verdana';
+    font-family: 'Poppins';
     font-weight: normal;
     text-align: center;
     color: black;
@@ -36,7 +36,7 @@ html, body {
     margin-top: 20px;
     padding: 8px 12px;
     font-size: 120%;
-    font-family: 'Century Gothic';
+    font-family: 'Poppins';;
     font-weight: none;
     color: black;
     background-color: #E5E5E5;
@@ -61,7 +61,7 @@ html, body {
 .create {
     padding: 20px 0px;
     font-size: 115%;
-    font-family: 'Lucida Calligraphy';
+    font-family: 'Poppins';;
     text-align: center;
     color: black;
 }

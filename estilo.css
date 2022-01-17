@@ -27,8 +27,8 @@ li {
 }
 
 header .categoria {
-    padding: 36px 20px;
-    font-family: 'Arial';
+    padding: 34px 20px;
+    font-family: 'Poppins';
     font-size: 14px;
     font-weight: bold;
     text-decoration: none;
@@ -46,8 +46,8 @@ header .icon {
 }
 
 header .login {
-    padding: 36px 20px;
-    font-family: 'Arial';
+    padding: 34px 20px;
+    font-family: 'Poppins';
     font-size: 14px;
     font-weight: bold;
     text-decoration: none;
@@ -59,8 +59,8 @@ header .login:hover {
 }
 
 header .special {
-    padding: 36px 20px;
-    font-family: 'Arial';
+    padding: 34px 20px;
+    font-family: 'Poppins';
     font-size: 14px;
     font-weight: bold;
     text-decoration: none;
