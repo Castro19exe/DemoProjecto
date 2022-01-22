@@ -38,6 +38,10 @@
         left: 90%;
     }
 
+    header ul {
+        margin-top: 15px;
+    }
+
     header .categoria, .special, .login, .search-container-responsive{
         display: none;
     }

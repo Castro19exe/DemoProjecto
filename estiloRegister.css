@@ -9,8 +9,8 @@ html, body {
 
 .login-register {
     width: 650px;
-    height: 60vh;
-    margin: 20vh auto;
+    height: 70vh;
+    margin: 15vh auto;
     padding: 40px 0px;
     background-color: white;
     box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.5);
@@ -82,7 +82,7 @@ html, body {
     margin: auto;
     width: 100px;
     height: 100px;
-    margin-top: 40px;
+    margin-top: 60px;
     margin-bottom: 40px;
     font-size: 40px;
     color: #E6E6E6;
