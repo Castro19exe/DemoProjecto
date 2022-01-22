@@ -21,7 +21,7 @@
 @media screen and (max-width: 1115px) {
     .menu {
         display: inherit;
-        padding: 20px 0px 20px 0px;
+        padding: 20px 0px 5px 0px;
     }
 
     header .logo {
@@ -178,7 +178,7 @@
     .tit {
         display: block;
         margin: auto;
-        font-size: 40px;
+        font-size: 45px;
         margin-bottom: 50px;
     }
     
@@ -191,7 +191,6 @@
         margin-top: 20px;
         padding: 8px 12px;
         font-size: 120%;
-        font-family: Century Gothic;
         font-weight: none;
         color: black;
         background-color: #E5E5E5;
@@ -213,11 +212,7 @@
     }
     
     .create {
-        padding: 20px 0px;
-        font-size: 14px;
-        font-family: 'Lucida Calligraphy';
-        text-align: center;
-        color: black;
+        font-size: 15px;
     }
     
     .here {
