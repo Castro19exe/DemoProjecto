@@ -81,7 +81,7 @@ header input {
     width: 280px;
     height: 35px;
     padding: 0px 10px;
-    font-family: 'Verdana';
+    font-family: 'Poppins';
     border: none;
 }
 
@@ -170,7 +170,6 @@ header button:hover {
     height: 18px;
     padding-block: 10px;
     padding-inline: 10px 1px;
-    font-family: 'Verdana';
     border: none;
 }
 
@@ -286,7 +285,7 @@ header button:hover {
 }
 
 .teste3 {
-    padding: 0px 10px;
+    padding: 0px 5px;
     height: 22.5px;
     font-family: 'Verdana';
     font-size: 18px;
@@ -309,7 +308,7 @@ header button:hover {
     top: 10px;
     left: 10px;
     margin: 0;
-    padding: 0px 10px;
+    padding: 0px 5px;
     height: 25px;
     font-family: 'Verdana';
     font-size: 20px;
@@ -414,4 +413,11 @@ header button:hover {
     to {
         opacity: 1
     }
+}
+
+.item {
+    position: relative;
+    width: 50%;
+    height: auto;
+    margin: 35px 15px;
 }

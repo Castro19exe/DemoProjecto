@@ -1,5 +1,4 @@
 /* Slide Show */
-
 var slideIndex = 1;
 showSlides(slideIndex);
 
@@ -28,7 +27,6 @@ function showSlides(n) {
 }
 
 /* Menu Responsive */
-
 function myFunction() {
     var x = document.getElementById("Menu");
     if (x.className === "menu") {
