@@ -14,13 +14,15 @@
     <title>  Recomendados | De Castro </title>
 </head>
 <body>
+    <button onclick="topFunction()" id="myBtn" title="Go to top"> <i class="fa fa-arrow-up"> </i> </button>
+
     <header class="menu" id="Menu">
         <a href="index.html" class="logo"> <img src="img/logo2.PNG" alt=""> </a>
         <ul>
             <li class="teste"> 
                 <a class="special" href="special.html">Recomendados</a>
             </li>
-            <li class="teste"> 
+            <li class="teste">
                 <a class="categoria" href="news.html">Novidades</a>
             </li>
             <li class="teste">
@@ -236,18 +238,38 @@
                 </div>
             </li>
             <li>
-                <a class="login" href="login.html">Minha Conta</a> 
+                <a class="login" href="login.html"> Minha Conta </a> 
+            </li>
+            <li>
+                <a class="notification-icon-responsive" href="notification.html"> Notificações </a> 
+            </li>
+            <li>
+                <a class="shop-icon-responsive" href=""> Carrinho </a> 
             </li>
             <li href="javascript:void(0);" class="icon" onclick="myFunction()">
                 <i class="fa fa-bars"> </i>
             </li>
         </ul>
+
+        <div class="notification-icon">
+            <a class="link-icon" href="notification.html"> </a>
+            <label class="notification-number"> 9+ </label>
+        </div>
+
+        <div class="shop-icon">
+            <a class="link-icon" href=""> </a>
+            <label class="notification-number"> 0 </label>
+        </div>
+        
+        <!-- <p class="saldo"> 0.00 € </p> -->
+
         <div class="search-container">
             <form action="">
                 <input type="text" name="search" placeholder="Pesquisa aqui..." autocomplete="off">
                 <button type="submit"> <i class="fa fa-search"> </i> </button>
             </form>
         </div>
+        
         <div class="search-container-responsive">
             <input type="text" name="search" placeholder="Pesquisa aqui..." autocomplete="off">
             <button type="submit"> <i class="fa fa-search"> </i> </button>
@@ -422,12 +444,26 @@
         </div>
 
         <div class="produto">
+            <img class="img1" src="img/vapormaxevo3.jpg" alt="">
+            <img class="img2" src="img/vapormaxevo4.jpg" alt="">
+            <p class="nome"> Nike Air VaporMax Evo </p>
+            <p class="preco"> 225,00€ </p>
+        </div>
+
+        <div class="produto">
             <img class="img1" src="img/lacoste1.jpg" alt="">
             <img class="img2" src="img/lacoste2.jpg" alt="">
             <p class="nome"> Lacoste Pólo Alligator </p>
             <p class="preco"> 75,00€ </p>
         </div>
 
+        <div class="produto">
+            <img class="img1" src="img/airmax951.jpg" alt="">
+            <img class="img2" src="img/airmax952.jpg" alt="">
+            <p class="nome"> Nike Air Max 95 Essential de Mulher </p>
+            <p class="preco"> 170,00€ </p>
+        </div>
+        
         <div class="produto">
             <img class="img1" src="img/filacasaco1.jpg" alt="">
             <img class="img2" src="img/filacasaco2.jpg" alt="">
@@ -436,10 +472,24 @@
         </div>
 
         <div class="produto">
-            <img class="img1" src="img/airmax951.jpg" alt="">
-            <img class="img2" src="img/airmax952.jpg" alt="">
-            <p class="nome"> Nike Air Max 95 Essential de Mulher </p>
-            <p class="preco"> 170,00€ </p>
+            <img class="img1" src="img/northfacenuptse1.jpg" alt="">
+            <img class="img2" src="img/northfacenuptse2.jpg" alt="">
+            <p class="nome"> The North Face Casaco 1996 Retro Nuptse </p>
+            <p class="preco"> 300,00€ </p>
+        </div>
+
+        <div class="produto">
+            <img class="img1" src="img/meiasadidas1.jpg" alt="">
+            <img class="img2" src="img/meiasadidas2.jpg" alt="">
+            <p class="nome"> Adidas Originals Meias 3 Pack Solid Crew </p>
+            <p class="preco"> 13,00€ </p>
+        </div>
+
+        <div class="produto">
+            <img class="img1" src="img/vans5.jpg" alt="">
+            <img class="img2" src="img/vans6.jpg" alt="">
+            <p class="nome"> Vans Sk8-Hi para Mulher </p>
+            <p class="preco"> 90,00€ </p>
         </div>
     </section>
 

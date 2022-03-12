@@ -4,7 +4,7 @@
     }
 }
 
-@media screen and (max-width: 1470px) {
+@media screen and (max-width: 1635px) {
     header .search-container{
         display: none;
     }
@@ -18,7 +18,7 @@
     }
 }
 
-@media screen and (max-width: 1115px) {
+@media screen and (max-width: 1275px) {
     .menu {
         display: inherit;
         padding: 20px 0px 5px 0px;
@@ -42,7 +42,15 @@
         margin-top: 15px;
     }
 
-    header .categoria, .special, .login, .search-container-responsive{
+    .shop-icon {
+        display: none;
+    }
+    
+    .notification-icon {
+        display: none;
+    }
+
+    header .categoria, .special, .login, .search-container-responsive, .notification-icon-responsive, .shop-icon-responsive {
         display: none;
     }
 
@@ -147,6 +155,11 @@
         transition: 0.2s;
     }
 
+    .search-container-responsive button:hover {
+        height: 39px;
+        font-size: 20px;
+    }
+
     .prev {
         top: 40%;
         left: 0px;
@@ -167,82 +180,29 @@
     }
 }
 
-@media screen and (max-width: 999px) {
-    .login-register {
-        width: 95%;
-        height: 98vh;
-        margin: 1vh auto;
-    }
-    
-    .tit {
-        display: block;
-        margin: auto;
-        font-size: 45px;
-        margin-bottom: 50px;
-    }
-    
-    .dados {
-        display: block;
-        margin: auto;
-        outline: none;
-        width: 90%;
-        height: 55px;
-        margin-top: 20px;
-        padding: 8px 12px;
-        font-size: 120%;
-        font-weight: none;
-        color: black;
-        background-color: #E5E5E5;
-        border: none;
-        border-bottom: 2px solid black;
-        border-top-left-radius: 0px;
-        border-top-right-radius: 0px;
-        transition: border 0.2s;
-    }
-    
-    .dados:hover {
-        color: rgb(226, 55, 55);
-        border-bottom: 2px solid rgb(226, 55, 55);
-    }
-    
-    .dados:focus {
-        color: rgb(226, 55, 55);
-        border-bottom: 2px solid rgb(226, 55, 55);
-    }
-    
-    .create {
-        font-size: 15px;
-    }
-    
-    .here {
-        color: #A31111;
-        text-decoration: none;
-    }
-    
-    .here:hover {
-        color: rgb(226, 55, 55);
-        text-decoration: underline;
-    }
-    
-    .submit {
-        outline: 0;
-        display: block;
-        margin: auto;
-        width: 100px;
-        height: 100px;
-        margin-top: 40px;
-        margin-bottom: 40px;
-        font-size: 40px;
-        color: #E6E6E6;
-        background-color: #AE4242;
-        border: 0px solid;
-        border-radius: 30px;
-        border-color: #AE4242;
-        transition: width 0.7s, background-color 0.3s, border-radius 0.4s;
-    }
-}
-
 @media screen and (max-width: 700px) {
+    #myBtn {
+        z-index: 99;
+        display: none;
+        position: fixed;
+        bottom: 20px;
+        right: 0px;
+        margin: 0% 45%;
+        font-size: 25px;
+        border: none;
+        outline: none;
+        background-color: rgb(226, 55, 55);
+        color: white;
+        cursor: pointer;
+        padding: 15px;
+        border-radius: 4px;
+        transition: 0.2s;
+    }
+      
+    #myBtn:hover {
+        background-color: #555;
+    }
+
     header .icon {
         display: block;
         position: absolute;
