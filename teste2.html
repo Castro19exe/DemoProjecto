@@ -1,28 +1,67 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
+<html>
+<style>
+#myProgress {
+  	width: 100%;
+  	background-color: #ddd;
+}
+
+#myBar {
+  	width: 1%;
+  	height: 30px;
+  	background-color: #04AA6D;
+}
+
+.boton {
+	color: #fff;
+    background-color: rgb(206, 63, 63);
+    border-radius: 5px;
+}
+
+#number {
+	position: relative;
+    left: 49%;
+}
+</style>
 <body>
-    <script>
-        1
-2
-3
-4
-5
-var splide = new Splide( '.splide' );
 
-splide.on( 'pagination:mounted', function( data ) {
-  // data.items contains all dot items
-  data.items.forEach( function( item ) {
-    item.button.textContent = String( item.page + 1 );
-  } );
-} );
+<h1> RUNALDO </h1>
 
-splide.mount();
-    </script>
+<div id="myProgress">
+  <div id="myBar"></div>
+</div>
+
+<br>
+
+<div style="display:flex;"> 
+<button onclick="move()" class="boton"> Click Me </button> 
+
+<p id="number"> 0% </p>
+
+</div>
+
+<script>
+var i = 0;
+function move() {
+  if (i == 0) {
+    i = 1;
+    var elem = document.getElementById("myBar");
+    var teste = document.getElementById("number");
+    var width = 1;
+    var id = setInterval(frame, 10);
+    function frame() {
+      if (width >= 100) {
+        clearInterval(id);
+        i = 0;
+      } else {
+        width++;
+        elem.style.width = width + "%";
+        teste.innerHTML = width + "%";
+      }
+    }
+  }
+}
+</script>
+
 </body>
 </html>
