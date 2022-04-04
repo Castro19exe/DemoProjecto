@@ -1,26 +1,26 @@
 html, body {
     margin: 0;
-    background-image: url("img/annouce2.png");
+    background-image: url("img/background.jpg");
     background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
 
-.login-register {
+.register-form {
     width: 650px;
-    height: 70vh;
-    margin: 15vh auto;
+    height: 62vh;
+    margin: 18vh auto;
     padding: 40px 0px;
     background-color: white;
-    box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 0px 14px -3px #000000;
 }
 
 .tit {
     display: block;
     margin: auto;
     margin-bottom: 50px;
-    font-size: 60px;
+    font-size: 68px;
     font-family: 'Poppins';
     font-weight: bold;
     text-align: center;
@@ -41,55 +41,23 @@ html, body {
     color: black;
     background-color: #E5E5E5;
     border: none;
-    border-bottom: 2px solid black;
-    border-top-left-radius: 0px;
-    border-top-right-radius: 0px;
-    box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.35);
+    box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.35);
     transition: border 0.2s;
-}
-
-.dados:hover {
-    color: rgb(226, 55, 55);
-    border-bottom: 2px solid rgb(226, 55, 55);
-}
-
-.dados:focus {
-    color: rgb(226, 55, 55);
-    border-bottom: 2px solid rgb(226, 55, 55);
-}
-
-.create {
-    padding: 20px 0px;
-    font-size: 115%;
-    font-family: 'Poppins';
-    text-align: center;
-    color: black;
-}
-
-.here {
-    color: #A31111;
-    text-decoration: none;
-}
-
-.here:hover {
-    color: rgb(226, 55, 55);
-    text-decoration: underline;
 }
 
 .submit {
     outline: 0;
     display: block;
+    width: 70%;
+    height: 50px;
     margin: auto;
-    width: 100px;
-    height: 100px;
-    margin-top: 60px;
+    margin-top: 40px;
     margin-bottom: 40px;
-    font-size: 40px;
-    color: #E6E6E6;
-    background-color: #AE4242;
-    border: 0px solid;
-    border-radius: 30px;
-    border-color: #AE4242;
+    font-size: 25px;
+    font-family: 'Poppins';
+    color: white;
+    background: linear-gradient(0.55turn, rgb(226, 55, 55), rgb(226, 55, 55), #f69d3c);
+    border: none;
     transition: width 0.7s, background-color 0.3s, border-radius 0.4s;
 }
 
@@ -101,23 +69,6 @@ html, body {
     border-color: rgb(226, 55, 55);
 }
 
-.hide {
-    display: none;
-}
-
-.erro {
-    position: absolute;
-    height: 45px;
-    top: 0%;
-    right: 3%;
-    bottom: 0;
-    font-size: 100%;
-    font-family: Century Gothic;
-    color: white;
-    background-color: #A44045;
-    border-bottom: 3px solid #5F0C0C;
-    -webkit-animation-name: animatetop;
-    -webkit-animation-duration: 0.5s;
-    animation-name: animatetop;
-    animation-duration: 0.5s
+.submit:focus {
+    outline: 0;
 }

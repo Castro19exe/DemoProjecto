@@ -180,68 +180,6 @@
     }
 }
 
-@media screen and (max-width: 1000px) {
-    .login-register {
-        width: 90vw;
-        height: 90vh;
-        margin: 5vh auto;
-    }
-    
-    .tit {
-        display: block;
-        margin: auto;
-        margin-bottom: 30px;
-    }
-    
-    .dados {
-        outline: none;
-        display: block;
-        width: 90%;
-        margin: auto;
-    }
-    
-    .dados:hover {
-        color: rgb(226, 55, 55);
-        border-bottom: 2px solid rgb(226, 55, 55);
-    }
-    
-    .dados:focus {
-        color: rgb(226, 55, 55);
-        border-bottom: 2px solid rgb(226, 55, 55);
-    }
-    
-    .create {
-        padding: 20px 0px;
-    }
-    
-    .here {
-        color: #A31111;
-        text-decoration: none;
-    }
-    
-    .here:hover {
-        color: rgb(226, 55, 55);
-        text-decoration: underline;
-    }
-    
-    .submit {
-        outline: 0;
-        display: block;
-        margin: auto;
-        width: 100px;
-        height: 100px;
-        margin-top: 40px;
-        margin-bottom: 40px;
-        font-size: 40px;
-        color: #E6E6E6;
-        background-color: #AE4242;
-        border: 0px solid;
-        border-radius: 30px;
-        border-color: #AE4242;
-        transition: width 0.7s, background-color 0.3s, border-radius 0.4s;
-    }
-}
-
 @media screen and (max-width: 700px) {
     header .icon {
         display: block;
@@ -387,5 +325,34 @@
         -webkit-animation-duration: 1.5s;
         animation-name: fade;
         animation-duration: 1.5s;
+    }
+
+    .login-form {
+        width: 95vw;
+        height: 95vh;
+        margin: 2.5vh auto;
+    }
+
+    .register-form {
+        width: 95vw;
+        height: 95vh;
+        margin: 2.5vh auto;
+    }
+    
+    .tit {
+        font-size: 45px;
+    }
+    
+    .dados {
+        width: 85%;
+    }
+    
+    .create {
+        margin-left: 0%;
+        text-align: center;
+    }
+
+    .submit {
+        width: 85%;
     }
 }
